@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.soap.com/soap"
+	targetNamespace="http://www.soap.com/soap"
+	elementFormDefault="qualified">
+	<!-- response -->
+	<xs:element name="responseSoap">
+		<xs:complexType >
+			<xs:sequence>
+				<xs:element name="status" type="xs:string" />
+				<xs:element name="code" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- request -->
+	<xs:element name="requestSoap">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nama" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
